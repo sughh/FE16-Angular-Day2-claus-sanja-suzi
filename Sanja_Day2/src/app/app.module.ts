@@ -8,6 +8,7 @@ import { HeroComponent } from './hero/hero.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';  // package added!!
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { FooterComponent } from './footer/footer.component';
     HeroComponent,
     HomePageComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
