@@ -12,9 +12,17 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 formInfo = new FormGroup({
-  firstName: new FormControl(""),
-  lastName: new FormControl(""),
-  email: new FormControl("")
+  firstName: new FormControl("", Validators.required),
+  lastName: new FormControl("", Validators.required),
+  email: new FormControl("", Validators.email)
 
 })
+takingValuesFromInputs(){
+  if(this.formInfo.valid){ //Validators!!!
+let values = this.formInfo.value;
+  console.log(values);
+  }
+  
+}
+
 }

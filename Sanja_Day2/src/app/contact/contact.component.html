@@ -1,4 +1,4 @@
-<form [formGroup]="formInfo">
+<form [formGroup]="formInfo" (ngSubmit)="takingValuesFromInputs()">
     <input type="text" formControlName="firstName" placeholder="First Name">
     <input type="text" formControlName="lastName" placeholder="Last Name">
     <input type="text" formControlName="email" placeholder="Email">
