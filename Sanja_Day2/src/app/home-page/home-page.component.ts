@@ -26,7 +26,7 @@ cars: Array<{brand:string, model:string, img:string, year:number}> =[{
 {
   brand: "Tesla", 
   model: "A1", 
-  img:"https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063_960_720.jpgjpg", 
+  img:"https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063_960_720.jpg", 
   year: 2022
 }
 ]
