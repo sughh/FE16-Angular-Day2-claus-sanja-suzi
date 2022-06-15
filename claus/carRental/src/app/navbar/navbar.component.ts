@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  counter: number = 0;
+
+  countDonate() {
+    this.counter += 10;
+    console.log(this.counter);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

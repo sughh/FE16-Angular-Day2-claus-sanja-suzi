@@ -1,1 +1,35 @@
-<p>main works!</p>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let each of cars" class="col">
+      <div class="card h-100" style="width: 18rem;">
+        <img src="{{each.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{each.name}}</h5>
+          <p class="card-text">{{each.text}}.</p>
+          <a href="#" class="btn btn-primary mt-auto">Rent me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container p-5">
+  <form [formGroup]="newCars" (ngSubmit)="onSubmit()">
+    <label>
+      Name:
+      <input type="text" formControlName="name">
+    </label>
+    <br><br>
+    <label>
+      Text:
+      <input type="text" formControlName="text">
+    </label>
+    <br><br>
+    <label>
+      Image:
+      <input type="text" formControlName="img">
+    </label>
+    <br><br>
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
+</div>
